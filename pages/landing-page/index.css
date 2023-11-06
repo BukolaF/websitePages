@@ -23,7 +23,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: darkgray;
+    background: dimgray;
 }
 .heading h1{
     width: 120px;
@@ -38,6 +38,7 @@ body{
     border-radius: 6px;
     background-color: inherit;
     transition: background-color 1s;
+    margin-right: 20px;
 }
 .item:hover {
     background-color: black;

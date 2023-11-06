@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="heading">
+        <h1> 
+            <a href="../landing-page/index.html">CUPID</a></h1>
+           <div class="nav-menu">
+            <ul>
+            <li class="item">
+                <a href="../login-page/index.html">Login</a>
+                </li>
+                <li class="item" id="password-reset">Password Reset</li>
+            </ul>
+            </div>
+     </div>
+        <div class="main-page">
+            <form>
+                <h1>Open Account</h1>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                </div>
+              
+                <div class="input-group">
+                      <label>Email Id</label>
+                      <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                      <span id="email-error"></span>
+                </div>   
+                <div class="input-group password-box">
+                      <label>Password</label>
+                      <input type="password"  placeholder="type your password"  id="contact-password" onkeyup="validatePassword()">
+                      <img src="./images/eye-close.png" id="eye-icon">
+                      <span id="password-error"></span>
+                </div>
+                <div class="input-group">
+                    <label>Retype Password</label>
+                    <input type="password" placeholder="Retype Password" id="contact-password-retype" onkeyup="validatePasswordRetype()">
+                    <span id="retype-password-error"></span>
+              </div>
+                <button onclick="return validateForm()">Submit</button>
+                <span id="submit-error"></span>
+        </form>
+        
+        </div>
+        <script src="./index.js"></script>
+</body>
+</html>
